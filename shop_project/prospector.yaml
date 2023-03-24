@@ -1,0 +1,15 @@
+uses:
+  - django
+  - celery
+
+pylint:
+  disable:
+    - django-not-configured
+    - import-outside-toplevel
+    - unused-import
+pyflakes:
+  disable:
+    - F401
+
+ignore-patterns:
+  - .*migrations
