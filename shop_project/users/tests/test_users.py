@@ -38,3 +38,4 @@ class UsersTestCase(APITestCase):
 
         response = self.client.get(url)
         assert response.status_code == 200
+        assert response.data == "Hello world!"
