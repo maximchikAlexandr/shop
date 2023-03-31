@@ -18,6 +18,7 @@ class CustomUserManager(BaseUserManager):
     def create_superuser(self, email, password, **extra_fields):
         extra_fields.setdefault("is_staff", True)
         extra_fields.setdefault("is_active", True)
+        extra_fields.setdefault("is_superuser", True)
         return self.create_user(email, password, **extra_fields)
 
 
@@ -27,6 +28,7 @@ class CustomUser(AbstractBaseUser):
     last_name = models.CharField(max_length=50, blank=True, null=True, default=None)
     phone_number = models.CharField(max_length=20, blank=True, null=True, default=None)
     cashback_point = models.IntegerField(default=0)
+    is_superuser = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
@@ -35,6 +37,12 @@ class CustomUser(AbstractBaseUser):
     REQUIRED_FIELDS = []
 
     objects = CustomUserManager()
+
+    def has_perm(self, perm, obj=None):
+        return self.is_superuser
+
+    def has_module_perms(self, app_label):
+        return self.is_superuser
 
     def __str__(self):
         return self.email
