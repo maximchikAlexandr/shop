@@ -12,12 +12,12 @@ django = "^4.1.7"
 psycopg2-binary = "^2.9.5"
 djangorestframework = "^3.14.0"
 django-environ = "^0.10.0"
-pytest = "^7.2.2"
 prospector = "^1.9.0"
 djoser = "^2.1.0"
 django-seed = "^0.3.1"
 faker = "^18.3.1"
 faker-commerce = "^1.0.3"
+pytest-django = "^4.5.2"
 
 
 [build-system]
