@@ -21,7 +21,7 @@ class Command(BaseCommand):
         self.seeder = Seed.seeder()
         self.fake = Faker()
         self.fake.add_provider(faker_commerce.Provider)
-        super(Command, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def handle(self, *args, **options):
         self.__create_producers()
