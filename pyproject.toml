@@ -18,6 +18,7 @@ django-seed = "^0.3.1"
 faker = "^18.3.1"
 faker-commerce = "^1.0.3"
 pytest-django = "^4.5.2"
+py-spy = "^0.3.14"
 
 
 [build-system]
