@@ -38,10 +38,10 @@ class CustomUser(AbstractBaseUser):
 
     objects = CustomUserManager()
 
-    def has_perm(self, perm, obj=None):
+    def has_perm(self, _, __=None):
         return self.is_superuser
 
-    def has_module_perms(self, app_label):
+    def has_module_perms(self, _):
         return self.is_superuser
 
     def __str__(self):
