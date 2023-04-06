@@ -19,7 +19,7 @@ class CategoriesListView(ListAPIView):
     serializer_class = CategorySerializer
 
 
-class CatigoryProductsListView(APIView):
+class CategoryProductsListView(APIView):
     permission_classes = (AllowAny,)
 
     def get(self, request, category_id):
@@ -27,6 +27,16 @@ class CatigoryProductsListView(APIView):
         serializer = ProductSerializer(queryset, many=True)
         return Response(serializer.data)
 
+class DiscountProductsListView(APIView):
+    permission_classes = (AllowAny,)
+
+    def get(self, request, discount_id):
+        if discount_id == "null":
+            queryset = Product.objects.filter(discount__id__isnull=True)
+        else:
+            queryset = Product.objects.filter(discount__id=discount_id)
+        serializer = ProductSerializer(queryset, many=True)
+        return Response(serializer.data)
 
 class ProducersListView(ListAPIView):
     queryset = Producer.objects.all()
