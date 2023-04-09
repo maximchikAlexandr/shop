@@ -1,4 +1,7 @@
+from django.core.validators import MinValueValidator
 from django.db import models
+from django.db.models import CheckConstraint, Q, F
+
 from users.models import CustomUser
 
 
@@ -75,6 +78,14 @@ class Basket(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     count = models.IntegerField(null=True)
+
+    class Meta:
+        constraints = [
+            CheckConstraint(
+                check=Q(count__gte=0),
+                name='count',
+            ),
+        ]
 
 
 class Order(models.Model):
