@@ -17,9 +17,9 @@ class CustomerTestCase(APITestCase):
         ("categories", None),
         ("category_products", {"category_id": 361}),
         ("producers", None),
-        ("producer_products", {"producer_id": 4}),
+        ("producer_products", {"producer_id": 87}),
         ("discounts", None),
-        ("discounts_products", {"discount_id": 4}),
+        ("discounts_products", {"discount_id": 700}),
         ("promocodes", None),
         ("products", None),
     )
@@ -28,7 +28,9 @@ class CustomerTestCase(APITestCase):
         self.client = APIClient()
         password = make_password("12345qwerty!")
         self.user = get_user_model().objects.create(
-            email="test@test2.com", password=password, is_active=True
+            email="test@test2.com",
+            password=password,
+            is_active=True,
         )
         data = {"password": "12345qwerty!", "email": self.user.email}
         url = reverse("jwt-create")
@@ -41,9 +43,9 @@ class CustomerTestCase(APITestCase):
         for url, kwargs in self.URLS_AND_KWARGS:
             url = reverse(url, kwargs=kwargs)
             response = self.client.get(url)
-            assert response.status_code == 200, (
-                f"Response status code is not 200. URL: {url}"
-            )
-            assert response.content == EVERYTHING_EQUALS_NON_NONE, (
-                f"Response content is empty. URL: {url}"
-            )
+            assert (
+                response.status_code == 200
+            ), f"Response status code is not 200. URL: {url}"
+            assert (
+                response.content == EVERYTHING_EQUALS_NON_NONE
+            ), f"Response content is empty. URL: {url}"
