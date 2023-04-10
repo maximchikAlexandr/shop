@@ -9,6 +9,7 @@ from catalog.serializers import (
     PromocodeSerializer,
 )
 from django.db.models import F
+from django.db import transaction
 from django.shortcuts import get_object_or_404
 from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -96,6 +97,7 @@ class BasketView(APIView):
         serializer = BasketSerializer({"products": basket})
         return Response(serializer.data)
 
+    @transaction.atomic
     def post(self, request):
         input_serializer = AddProductSerializer(data=request.data)
         input_serializer.is_valid(raise_exception=True)
