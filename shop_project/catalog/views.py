@@ -103,10 +103,13 @@ class BasketView(APIView):
         product = get_object_or_404(Product, id=input_serializer.data.get("product_id"))
         basket, created = Basket.objects.get_or_create(user=request.user,
                                                        product=product)
-        if basket.count:
-            basket.count += input_serializer.data.get("number_of_items")
-        else:
+        if created:
             basket.count = input_serializer.data.get("number_of_items")
+        else:
+            basket.count += input_serializer.data.get("number_of_items")
 
-        basket.save()
+        if basket.count == 0:
+            basket.delete()
+        else:
+            basket.save()
         return Response()
