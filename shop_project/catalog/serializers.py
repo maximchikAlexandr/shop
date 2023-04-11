@@ -83,3 +83,7 @@ class BasketSerializer(serializers.Serializer):
 class AddProductSerializer(serializers.Serializer):
     product_id = serializers.IntegerField()
     number_of_items = serializers.IntegerField()
+
+
+class DeleteProductSerializer(serializers.Serializer):
+    product_id = serializers.IntegerField()

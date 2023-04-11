@@ -116,7 +116,7 @@ class Order(models.Model):
         (1, 1),
     )
 
-    date_created = models.DateTimeField()
+    date_created = models.DateTimeField(auto_now_add=True)
     promocode = models.ForeignKey(
         Promocode, on_delete=models.SET_NULL, null=True, blank=True
     )

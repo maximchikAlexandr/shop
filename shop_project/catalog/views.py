@@ -1,3 +1,10 @@
+from django.db.models import F
+from django.shortcuts import get_object_or_404
+from rest_framework.generics import ListAPIView
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from catalog.models import Category, Discount, Producer, Product, Promocode, Basket
 from catalog.serializers import (
     AddProductSerializer,
@@ -7,14 +14,8 @@ from catalog.serializers import (
     ProducerSerializer,
     ProductSerializer,
     PromocodeSerializer,
+    DeleteProductSerializer,
 )
-from django.db.models import F
-from django.shortcuts import get_object_or_404
-from rest_framework.generics import ListAPIView
-from rest_framework.permissions import AllowAny, IsAuthenticated
-from rest_framework.response import Response
-from rest_framework.views import APIView
-
 
 class CategoriesListView(ListAPIView):
     queryset = Category.objects.all()
@@ -101,8 +102,9 @@ class BasketView(APIView):
         input_serializer.is_valid(raise_exception=True)
 
         product = get_object_or_404(Product, id=input_serializer.data.get("product_id"))
-        basket, created = Basket.objects.get_or_create(user=request.user,
-                                                       product=product)
+        basket, created = Basket.objects.get_or_create(
+            user=request.user, product=product
+        )
         if created:
             basket.count = input_serializer.data.get("number_of_items")
         else:
@@ -112,4 +114,14 @@ class BasketView(APIView):
             basket.delete()
         else:
             basket.save()
+        return Response()
+
+    def delete(self, request):
+        input_serializer = DeleteProductSerializer(data=request.data)
+        input_serializer.is_valid(raise_exception=True)
+
+        product = get_object_or_404(Product, id=input_serializer.data.get("product_id"))
+
+        Basket.objects.get(user=request.user, product=product).delete()
+
         return Response()
