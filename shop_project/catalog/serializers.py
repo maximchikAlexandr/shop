@@ -1,8 +1,15 @@
 from datetime import date
 
+from catalog.models import (
+    Category,
+    Discount,
+    Order,
+    OrderProduct,
+    Producer,
+    Product,
+    Promocode,
+)
 from rest_framework import serializers
-
-from catalog.models import Category, Producer, Discount, Promocode, Product
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -87,3 +94,36 @@ class AddProductSerializer(serializers.Serializer):
 
 class DeleteProductSerializer(serializers.Serializer):
     product_id = serializers.IntegerField()
+
+
+class OrderProductsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderProduct
+        fields = ("product", "count")
+
+
+class OrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = (
+            "date_created",
+            "promocode",
+            "delivery_method",
+            "delivery_address",
+            "delivery_status",
+            "delivery_notif_in_time",
+            "payment_method",
+            "payment_status",
+            "user",
+            "result",
+            "products",
+        )
+        readonly_fields =(
+            "date_created",
+            "delivery_status",
+            "payment_status",
+            "result",
+        )
+
+    def create(self, validated_data):
+        pass
