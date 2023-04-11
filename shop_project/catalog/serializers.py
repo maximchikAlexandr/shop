@@ -1,3 +1,5 @@
+from datetime import date
+
 from rest_framework import serializers
 
 from catalog.models import Category, Producer, Discount, Promocode, Product
@@ -44,3 +46,44 @@ class ProductSerializer(serializers.ModelSerializer):
             "category",
             "producer",
         )
+
+
+class ProductInBasketSerializer(serializers.Serializer):
+    name = serializers.CharField()
+    price = serializers.DecimalField(max_digits=15, decimal_places=2)
+    number_of_items = serializers.IntegerField()
+    # discount = DiscountSerializer()
+
+
+class BasketSerializer(serializers.Serializer):
+    products = ProductInBasketSerializer(many=True)
+    result_price = serializers.SerializerMethodField()
+
+    def get_result_price(self, data):
+        result_price = 0
+        for item in data.get("products"):
+            if item.get("discount"):
+                percent = item.get("discount_percent")
+                date_end = item.get("discount_date_end")
+                delta = date.today() - date_end
+                if delta.days <= 0:
+                    result_price += (
+                            item.get("price")
+                            * (100 - percent)
+                            / 100
+                            * item.get("number_of_items")
+                    )
+                else:
+                    result_price += item.get("price") * item.get("number_of_items")
+            else:
+                result_price += item.get("price") * item.get("number_of_items")
+        return result_price
+
+
+class AddProductSerializer(serializers.Serializer):
+    product_id = serializers.IntegerField()
+    number_of_items = serializers.IntegerField()
+
+
+class DeleteProductSerializer(serializers.Serializer):
+    product_id = serializers.IntegerField()
