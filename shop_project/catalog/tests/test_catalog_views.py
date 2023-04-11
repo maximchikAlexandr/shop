@@ -1,8 +1,7 @@
 import pytest
-from django.contrib.auth import get_user_model
-from django.contrib.auth.hashers import make_password
+
 from django.shortcuts import reverse
-from rest_framework.test import APIClient, APITestCase
+from rest_framework.test import APITestCase
 
 from conftest import EV_EQUALS_NON_NONE
 
@@ -16,23 +15,23 @@ class ClientEndpointsTestCase(APITestCase):
         url = reverse(url, kwargs=kwargs)
         response = self.client.get(url)
         assert (
-                response.status_code == 200
+            response.status_code == 200
         ), f"Response status code is not 200. URL: {url}"
         assert (
-                response.content == EV_EQUALS_NON_NONE
+            response.content == EV_EQUALS_NON_NONE
         ), f"Response content is empty. URL: {url}"
 
     def check_response_list(self, url, kwargs):
         url = reverse(url, kwargs=kwargs)
         response = self.client.get(url)
         assert (
-                response.status_code == 200
+            response.status_code == 200
         ), f"Response status code is not 200. URL: {url}"
         assert isinstance(response.data, list)
         # дописать сравнение с json
         # assert response.data =
         assert (
-                response.content == EV_EQUALS_NON_NONE
+            response.content == EV_EQUALS_NON_NONE
         ), f"Response content is empty. URL: {url}"
         # доделать
         # assert response.data[0]["discount"] == discount
