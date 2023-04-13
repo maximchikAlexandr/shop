@@ -1,0 +1,10 @@
+[
+{
+    "model": "catalog.cashback",
+    "pk": 3,
+    "fields": {
+        "percent": 5,
+        "threshold": 100
+    }
+}
+]

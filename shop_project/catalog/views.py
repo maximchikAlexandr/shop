@@ -18,7 +18,7 @@ from catalog.serializers import (
 )
 
 class CategoriesListView(ListAPIView):
-    queryset = Category.objects.all()
+    queryset = Category.objects.all().order_by('id')
     permission_classes = (AllowAny,)
     serializer_class = CategorySerializer
 
@@ -27,7 +27,7 @@ class CategoryProductsListView(APIView):
     permission_classes = (AllowAny,)
 
     def get(self, request, category_id):
-        queryset = Product.objects.filter(category__id=category_id)
+        queryset = Product.objects.filter(category__id=category_id).order_by('id')
         serializer = ProductSerializer(queryset, many=True)
         return Response(serializer.data)
 
@@ -37,15 +37,15 @@ class DiscountProductsListView(APIView):
 
     def get(self, request, discount_id):
         if discount_id == "null":
-            queryset = Product.objects.filter(discount__id__isnull=True)
+            queryset = Product.objects.filter(discount__id__isnull=True).order_by('id')
         else:
-            queryset = Product.objects.filter(discount__id=discount_id)
+            queryset = Product.objects.filter(discount__id=discount_id).order_by('id')
         serializer = ProductSerializer(queryset, many=True)
         return Response(serializer.data)
 
 
 class ProducersListView(ListAPIView):
-    queryset = Producer.objects.all()
+    queryset = Producer.objects.all().order_by('id')
     permission_classes = (AllowAny,)
     serializer_class = ProducerSerializer
 
@@ -54,25 +54,25 @@ class ProducerProductsListView(APIView):
     permission_classes = (AllowAny,)
 
     def get(self, request, producer_id):
-        queryset = Product.objects.filter(producer__id=producer_id)
+        queryset = Product.objects.filter(producer__id=producer_id).order_by('id')
         serializer = ProductSerializer(queryset, many=True)
         return Response(serializer.data)
 
 
 class DiscountListView(ListAPIView):
-    queryset = Discount.objects.all()
+    queryset = Discount.objects.all().order_by('id')
     permission_classes = (AllowAny,)
     serializer_class = DiscountSerializer
 
 
 class PromocodesListView(ListAPIView):
-    queryset = Promocode.objects.all()
+    queryset = Promocode.objects.all().order_by('id')
     permission_classes = (AllowAny,)
     serializer_class = PromocodeSerializer
 
 
 class ProductsListView(ListAPIView):
-    queryset = Product.objects.all()
+    queryset = Product.objects.all().order_by('id')
     permission_classes = (AllowAny,)
     serializer_class = ProductSerializer
 

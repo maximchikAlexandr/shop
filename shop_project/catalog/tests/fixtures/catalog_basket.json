@@ -1,0 +1,92 @@
+[
+{
+    "model": "catalog.basket",
+    "pk": 1,
+    "fields": {
+        "user": 10,
+        "product": 560,
+        "count": 1
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 2,
+    "fields": {
+        "user": 10,
+        "product": 230,
+        "count": 35
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 5,
+    "fields": {
+        "user": 10,
+        "product": 545,
+        "count": 4
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 7,
+    "fields": {
+        "user": 10,
+        "product": 540,
+        "count": 1
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 8,
+    "fields": {
+        "user": 10,
+        "product": 640,
+        "count": 1
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 9,
+    "fields": {
+        "user": 10,
+        "product": 660,
+        "count": 1
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 10,
+    "fields": {
+        "user": 10,
+        "product": 670,
+        "count": 2
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 11,
+    "fields": {
+        "user": 10,
+        "product": 680,
+        "count": 1
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 12,
+    "fields": {
+        "user": 10,
+        "product": 690,
+        "count": 1
+    }
+},
+{
+    "model": "catalog.basket",
+    "pk": 13,
+    "fields": {
+        "user": 10,
+        "product": 698,
+        "count": 1
+    }
+}
+]

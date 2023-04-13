@@ -1,0 +1,2763 @@
+[
+{
+    "model": "catalog.promocode",
+    "pk": 773,
+    "fields": {
+        "name": "LDZTGBEW",
+        "percent": 20,
+        "date_start": "2023-03-11",
+        "date_end": "2023-05-16",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 774,
+    "fields": {
+        "name": "PZINGB2Y",
+        "percent": 21,
+        "date_start": "2023-03-20",
+        "date_end": "2023-06-23",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 775,
+    "fields": {
+        "name": "KZPKGBYQ",
+        "percent": 44,
+        "date_start": "2023-03-18",
+        "date_end": "2023-05-21",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 776,
+    "fields": {
+        "name": "ILXDGBA2",
+        "percent": 24,
+        "date_start": "2023-03-14",
+        "date_end": "2023-06-10",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 777,
+    "fields": {
+        "name": "CJAQGBCQ",
+        "percent": 14,
+        "date_start": "2023-03-23",
+        "date_end": "2023-04-25",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 778,
+    "fields": {
+        "name": "FXBEGBD1",
+        "percent": 3,
+        "date_start": "2023-03-16",
+        "date_end": "2023-08-16",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 779,
+    "fields": {
+        "name": "TKSXGBZH",
+        "percent": 44,
+        "date_start": "2023-03-22",
+        "date_end": "2023-09-01",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 780,
+    "fields": {
+        "name": "TQHXGB15",
+        "percent": 35,
+        "date_start": "2023-03-25",
+        "date_end": "2023-04-21",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 781,
+    "fields": {
+        "name": "HUHLGBXW",
+        "percent": 44,
+        "date_start": "2023-03-13",
+        "date_end": "2023-03-23",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 782,
+    "fields": {
+        "name": "MRWHGB0G",
+        "percent": 35,
+        "date_start": "2023-03-11",
+        "date_end": "2023-07-03",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 783,
+    "fields": {
+        "name": "HCUBGBC3",
+        "percent": 30,
+        "date_start": "2023-03-07",
+        "date_end": "2023-06-17",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 784,
+    "fields": {
+        "name": "EWDGGBTH",
+        "percent": 40,
+        "date_start": "2023-03-02",
+        "date_end": "2023-04-17",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 785,
+    "fields": {
+        "name": "DTGHGB7B",
+        "percent": 22,
+        "date_start": "2023-03-04",
+        "date_end": "2023-07-29",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 786,
+    "fields": {
+        "name": "ZPUSGB0B",
+        "percent": 25,
+        "date_start": "2023-03-25",
+        "date_end": "2023-05-28",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 787,
+    "fields": {
+        "name": "EWEGGBGD",
+        "percent": 48,
+        "date_start": "2023-03-19",
+        "date_end": "2023-09-06",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 788,
+    "fields": {
+        "name": "WIEBGBJW",
+        "percent": 38,
+        "date_start": "2023-03-15",
+        "date_end": "2023-07-13",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 789,
+    "fields": {
+        "name": "OXQUGBIZ",
+        "percent": 34,
+        "date_start": "2023-03-28",
+        "date_end": "2023-04-27",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 790,
+    "fields": {
+        "name": "NJXKGBB6",
+        "percent": 43,
+        "date_start": "2023-03-04",
+        "date_end": "2023-05-30",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 791,
+    "fields": {
+        "name": "FEJNGBAB",
+        "percent": 50,
+        "date_start": "2023-03-04",
+        "date_end": "2023-09-15",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 792,
+    "fields": {
+        "name": "XBTRGBH7",
+        "percent": 10,
+        "date_start": "2023-03-22",
+        "date_end": "2023-06-21",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 793,
+    "fields": {
+        "name": "RPGPGB45",
+        "percent": 16,
+        "date_start": "2023-03-08",
+        "date_end": "2023-08-22",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 794,
+    "fields": {
+        "name": "GBUUGB8K",
+        "percent": 24,
+        "date_start": "2023-03-05",
+        "date_end": "2023-06-27",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 795,
+    "fields": {
+        "name": "YHTNGBYK",
+        "percent": 25,
+        "date_start": "2023-03-07",
+        "date_end": "2023-07-31",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 796,
+    "fields": {
+        "name": "HOWPGBTW",
+        "percent": 15,
+        "date_start": "2023-03-11",
+        "date_end": "2023-04-28",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 797,
+    "fields": {
+        "name": "WUDDGBZW",
+        "percent": 20,
+        "date_start": "2023-03-08",
+        "date_end": "2023-05-07",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 798,
+    "fields": {
+        "name": "HHTIGBE1",
+        "percent": 9,
+        "date_start": "2023-03-24",
+        "date_end": "2023-04-04",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 799,
+    "fields": {
+        "name": "UMQGGBYR",
+        "percent": 45,
+        "date_start": "2023-03-27",
+        "date_end": "2023-09-14",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 800,
+    "fields": {
+        "name": "TBDTGBKK",
+        "percent": 11,
+        "date_start": "2023-03-12",
+        "date_end": "2023-06-18",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 801,
+    "fields": {
+        "name": "INBKGBDB",
+        "percent": 8,
+        "date_start": "2023-03-10",
+        "date_end": "2023-07-12",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 802,
+    "fields": {
+        "name": "FMZMGB2L",
+        "percent": 50,
+        "date_start": "2023-03-24",
+        "date_end": "2023-07-10",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 803,
+    "fields": {
+        "name": "DJDDGB2L",
+        "percent": 27,
+        "date_start": "2023-03-14",
+        "date_end": "2023-10-01",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 804,
+    "fields": {
+        "name": "GULXGB8N",
+        "percent": 27,
+        "date_start": "2023-03-06",
+        "date_end": "2023-05-26",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 805,
+    "fields": {
+        "name": "XHXYGB0O",
+        "percent": 1,
+        "date_start": "2023-03-08",
+        "date_end": "2023-05-19",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 806,
+    "fields": {
+        "name": "WLQVGB7Q",
+        "percent": 42,
+        "date_start": "2023-03-09",
+        "date_end": "2023-04-22",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 807,
+    "fields": {
+        "name": "DHOVGB8O",
+        "percent": 1,
+        "date_start": "2023-03-27",
+        "date_end": "2023-04-19",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 808,
+    "fields": {
+        "name": "UVVHGBXN",
+        "percent": 23,
+        "date_start": "2023-03-11",
+        "date_end": "2023-08-20",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 809,
+    "fields": {
+        "name": "ANTZGBR5",
+        "percent": 29,
+        "date_start": "2023-03-13",
+        "date_end": "2023-08-04",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 810,
+    "fields": {
+        "name": "REZOGBHJ",
+        "percent": 40,
+        "date_start": "2023-03-27",
+        "date_end": "2023-06-17",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 811,
+    "fields": {
+        "name": "TCEDGBI2",
+        "percent": 39,
+        "date_start": "2023-03-04",
+        "date_end": "2023-07-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 812,
+    "fields": {
+        "name": "VDWWGBZF",
+        "percent": 40,
+        "date_start": "2023-03-03",
+        "date_end": "2023-08-10",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 813,
+    "fields": {
+        "name": "PRFDGB0Y",
+        "percent": 16,
+        "date_start": "2023-03-26",
+        "date_end": "2023-07-18",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 814,
+    "fields": {
+        "name": "TKUTGBET",
+        "percent": 27,
+        "date_start": "2023-03-27",
+        "date_end": "2023-07-19",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 815,
+    "fields": {
+        "name": "CFWLGBQ4",
+        "percent": 1,
+        "date_start": "2023-03-12",
+        "date_end": "2023-06-11",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 816,
+    "fields": {
+        "name": "NGBBGBVD",
+        "percent": 9,
+        "date_start": "2023-03-27",
+        "date_end": "2023-05-08",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 817,
+    "fields": {
+        "name": "QWPLGBCN",
+        "percent": 49,
+        "date_start": "2023-03-27",
+        "date_end": "2023-05-15",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 818,
+    "fields": {
+        "name": "XNLDGB7Y",
+        "percent": 5,
+        "date_start": "2023-03-19",
+        "date_end": "2023-04-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 819,
+    "fields": {
+        "name": "APTDGB1W",
+        "percent": 19,
+        "date_start": "2023-03-09",
+        "date_end": "2023-09-13",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 820,
+    "fields": {
+        "name": "OGZPGB66",
+        "percent": 24,
+        "date_start": "2023-03-16",
+        "date_end": "2023-06-20",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 821,
+    "fields": {
+        "name": "GILWGBFO",
+        "percent": 44,
+        "date_start": "2023-03-21",
+        "date_end": "2023-09-01",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 822,
+    "fields": {
+        "name": "XCLUGBZ0",
+        "percent": 39,
+        "date_start": "2023-03-03",
+        "date_end": "2023-07-10",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 823,
+    "fields": {
+        "name": "NNCWGBPG",
+        "percent": 11,
+        "date_start": "2023-03-18",
+        "date_end": "2023-06-10",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 824,
+    "fields": {
+        "name": "LFCHGBV3",
+        "percent": 36,
+        "date_start": "2023-03-18",
+        "date_end": "2023-05-08",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 825,
+    "fields": {
+        "name": "AFKIGB56",
+        "percent": 28,
+        "date_start": "2023-03-01",
+        "date_end": "2023-08-16",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 826,
+    "fields": {
+        "name": "UCADGBT7",
+        "percent": 11,
+        "date_start": "2023-03-21",
+        "date_end": "2023-08-09",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 827,
+    "fields": {
+        "name": "LFPMGBF1",
+        "percent": 3,
+        "date_start": "2023-03-09",
+        "date_end": "2023-08-23",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 828,
+    "fields": {
+        "name": "PVDWGBV0",
+        "percent": 44,
+        "date_start": "2023-03-17",
+        "date_end": "2023-04-30",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 829,
+    "fields": {
+        "name": "QGNFGBE3",
+        "percent": 31,
+        "date_start": "2023-03-05",
+        "date_end": "2023-04-08",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 830,
+    "fields": {
+        "name": "KBJRGB0O",
+        "percent": 4,
+        "date_start": "2023-03-18",
+        "date_end": "2023-05-02",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 831,
+    "fields": {
+        "name": "EMAKGBMZ",
+        "percent": 44,
+        "date_start": "2023-03-02",
+        "date_end": "2023-08-12",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 832,
+    "fields": {
+        "name": "XXIKGB9H",
+        "percent": 17,
+        "date_start": "2023-03-03",
+        "date_end": "2023-07-05",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 833,
+    "fields": {
+        "name": "HDOOGB7M",
+        "percent": 38,
+        "date_start": "2023-03-26",
+        "date_end": "2023-05-19",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 834,
+    "fields": {
+        "name": "CYBNGBOX",
+        "percent": 12,
+        "date_start": "2023-03-21",
+        "date_end": "2023-05-09",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 835,
+    "fields": {
+        "name": "ODDJGB13",
+        "percent": 45,
+        "date_start": "2023-03-13",
+        "date_end": "2023-10-08",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 836,
+    "fields": {
+        "name": "HFDQGB3E",
+        "percent": 38,
+        "date_start": "2023-03-01",
+        "date_end": "2023-08-16",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 837,
+    "fields": {
+        "name": "TUSCGBQU",
+        "percent": 46,
+        "date_start": "2023-03-08",
+        "date_end": "2023-08-18",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 838,
+    "fields": {
+        "name": "PJDQGBAR",
+        "percent": 9,
+        "date_start": "2023-03-04",
+        "date_end": "2023-06-30",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 839,
+    "fields": {
+        "name": "CXEFGBS1",
+        "percent": 4,
+        "date_start": "2023-03-19",
+        "date_end": "2023-05-21",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 840,
+    "fields": {
+        "name": "WFAPGBC0",
+        "percent": 25,
+        "date_start": "2023-03-28",
+        "date_end": "2023-06-08",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 841,
+    "fields": {
+        "name": "SXOTGBDI",
+        "percent": 46,
+        "date_start": "2023-03-10",
+        "date_end": "2023-07-22",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 842,
+    "fields": {
+        "name": "OYTKGB6C",
+        "percent": 38,
+        "date_start": "2023-03-21",
+        "date_end": "2023-08-07",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 843,
+    "fields": {
+        "name": "TWUMGBMP",
+        "percent": 37,
+        "date_start": "2023-03-09",
+        "date_end": "2023-08-07",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 844,
+    "fields": {
+        "name": "CVMKGB3R",
+        "percent": 3,
+        "date_start": "2023-03-15",
+        "date_end": "2023-08-20",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 845,
+    "fields": {
+        "name": "NTJYGBA6",
+        "percent": 9,
+        "date_start": "2023-03-23",
+        "date_end": "2023-09-14",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 846,
+    "fields": {
+        "name": "ECKMGB2B",
+        "percent": 48,
+        "date_start": "2023-03-20",
+        "date_end": "2023-08-23",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 847,
+    "fields": {
+        "name": "PVCHGB3R",
+        "percent": 47,
+        "date_start": "2023-03-06",
+        "date_end": "2023-04-01",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 848,
+    "fields": {
+        "name": "HAGMGBWA",
+        "percent": 44,
+        "date_start": "2023-03-24",
+        "date_end": "2023-05-10",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 849,
+    "fields": {
+        "name": "VCATGBOK",
+        "percent": 5,
+        "date_start": "2023-03-12",
+        "date_end": "2023-08-05",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 850,
+    "fields": {
+        "name": "EQICGBIG",
+        "percent": 31,
+        "date_start": "2023-03-15",
+        "date_end": "2023-07-31",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 851,
+    "fields": {
+        "name": "MMAWGBZB",
+        "percent": 31,
+        "date_start": "2023-03-16",
+        "date_end": "2023-06-15",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 852,
+    "fields": {
+        "name": "DTBRGBPV",
+        "percent": 42,
+        "date_start": "2023-03-01",
+        "date_end": "2023-08-25",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 853,
+    "fields": {
+        "name": "PYQQGBWW",
+        "percent": 48,
+        "date_start": "2023-03-23",
+        "date_end": "2023-03-23",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 854,
+    "fields": {
+        "name": "JLECGB8O",
+        "percent": 15,
+        "date_start": "2023-03-13",
+        "date_end": "2023-10-04",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 855,
+    "fields": {
+        "name": "BLEIGBYS",
+        "percent": 21,
+        "date_start": "2023-03-05",
+        "date_end": "2023-04-28",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 856,
+    "fields": {
+        "name": "AICPGBMY",
+        "percent": 24,
+        "date_start": "2023-03-18",
+        "date_end": "2023-05-02",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 857,
+    "fields": {
+        "name": "TLDBGB9M",
+        "percent": 37,
+        "date_start": "2023-03-20",
+        "date_end": "2023-04-25",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 858,
+    "fields": {
+        "name": "LBLOGBRY",
+        "percent": 41,
+        "date_start": "2023-03-13",
+        "date_end": "2023-07-06",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 859,
+    "fields": {
+        "name": "ZECKGB7W",
+        "percent": 10,
+        "date_start": "2023-03-08",
+        "date_end": "2023-06-29",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 860,
+    "fields": {
+        "name": "BOHDGB4V",
+        "percent": 2,
+        "date_start": "2023-03-13",
+        "date_end": "2023-04-29",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 861,
+    "fields": {
+        "name": "LAMGGBCO",
+        "percent": 5,
+        "date_start": "2023-03-27",
+        "date_end": "2023-07-26",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 862,
+    "fields": {
+        "name": "MNXLGBJG",
+        "percent": 21,
+        "date_start": "2023-03-22",
+        "date_end": "2023-10-03",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 863,
+    "fields": {
+        "name": "IWWBGBIP",
+        "percent": 2,
+        "date_start": "2023-03-01",
+        "date_end": "2023-09-15",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 864,
+    "fields": {
+        "name": "IPLJGBYU",
+        "percent": 10,
+        "date_start": "2023-03-28",
+        "date_end": "2023-06-25",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 865,
+    "fields": {
+        "name": "ROOWGBGF",
+        "percent": 8,
+        "date_start": "2023-03-29",
+        "date_end": "2023-07-03",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 866,
+    "fields": {
+        "name": "QWSPGBE4",
+        "percent": 17,
+        "date_start": "2023-03-27",
+        "date_end": "2023-09-15",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 867,
+    "fields": {
+        "name": "GLXWGBOH",
+        "percent": 42,
+        "date_start": "2023-03-25",
+        "date_end": "2023-09-09",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 868,
+    "fields": {
+        "name": "VDBYGB13",
+        "percent": 37,
+        "date_start": "2023-03-21",
+        "date_end": "2023-09-12",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 869,
+    "fields": {
+        "name": "ZWKFGBFA",
+        "percent": 34,
+        "date_start": "2023-03-13",
+        "date_end": "2023-05-20",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 870,
+    "fields": {
+        "name": "UBOZGB7A",
+        "percent": 2,
+        "date_start": "2023-03-07",
+        "date_end": "2023-07-18",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 871,
+    "fields": {
+        "name": "HZXTGBX8",
+        "percent": 42,
+        "date_start": "2023-03-05",
+        "date_end": "2023-05-06",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 872,
+    "fields": {
+        "name": "GIEOGBJV",
+        "percent": 13,
+        "date_start": "2023-03-20",
+        "date_end": "2023-06-21",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 873,
+    "fields": {
+        "name": "HUMAGBB0",
+        "percent": 46,
+        "date_start": "2023-03-22",
+        "date_end": "2023-08-16",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 874,
+    "fields": {
+        "name": "TWPVGBLS",
+        "percent": 6,
+        "date_start": "2023-03-20",
+        "date_end": "2023-10-04",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 875,
+    "fields": {
+        "name": "JNYFGBY1",
+        "percent": 3,
+        "date_start": "2023-03-29",
+        "date_end": "2023-05-17",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 876,
+    "fields": {
+        "name": "XRWHGBG5",
+        "percent": 23,
+        "date_start": "2023-03-28",
+        "date_end": "2023-03-26",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 877,
+    "fields": {
+        "name": "OVRHGB87",
+        "percent": 25,
+        "date_start": "2023-03-13",
+        "date_end": "2023-06-06",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 878,
+    "fields": {
+        "name": "UJYUGB3N",
+        "percent": 27,
+        "date_start": "2023-03-16",
+        "date_end": "2023-05-17",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 879,
+    "fields": {
+        "name": "LKSAGBEA",
+        "percent": 28,
+        "date_start": "2023-03-25",
+        "date_end": "2023-05-14",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 880,
+    "fields": {
+        "name": "VQGEGBFM",
+        "percent": 41,
+        "date_start": "2023-03-26",
+        "date_end": "2023-08-22",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 881,
+    "fields": {
+        "name": "AATPGBL2",
+        "percent": 46,
+        "date_start": "2023-03-13",
+        "date_end": "2023-07-13",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 882,
+    "fields": {
+        "name": "VHJRGBM3",
+        "percent": 21,
+        "date_start": "2023-03-10",
+        "date_end": "2023-08-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 883,
+    "fields": {
+        "name": "KEEIGBI4",
+        "percent": 21,
+        "date_start": "2023-03-10",
+        "date_end": "2023-06-16",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 884,
+    "fields": {
+        "name": "VBMAGBTL",
+        "percent": 26,
+        "date_start": "2023-03-08",
+        "date_end": "2023-05-03",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 885,
+    "fields": {
+        "name": "MSFEGB8F",
+        "percent": 45,
+        "date_start": "2023-03-06",
+        "date_end": "2023-05-25",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 886,
+    "fields": {
+        "name": "STRNGBCK",
+        "percent": 43,
+        "date_start": "2023-03-28",
+        "date_end": "2023-07-15",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 887,
+    "fields": {
+        "name": "IIDLGBTD",
+        "percent": 46,
+        "date_start": "2023-03-18",
+        "date_end": "2023-06-29",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 888,
+    "fields": {
+        "name": "JLHRGBRH",
+        "percent": 43,
+        "date_start": "2023-03-15",
+        "date_end": "2023-05-01",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 889,
+    "fields": {
+        "name": "JQDOGBH6",
+        "percent": 1,
+        "date_start": "2023-03-11",
+        "date_end": "2023-08-27",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 890,
+    "fields": {
+        "name": "FQHKGB89",
+        "percent": 28,
+        "date_start": "2023-03-26",
+        "date_end": "2023-09-06",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 891,
+    "fields": {
+        "name": "AUODGBR5",
+        "percent": 37,
+        "date_start": "2023-03-24",
+        "date_end": "2023-06-19",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 892,
+    "fields": {
+        "name": "LCPTGBLT",
+        "percent": 45,
+        "date_start": "2023-03-13",
+        "date_end": "2023-04-11",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 893,
+    "fields": {
+        "name": "ZNRKGBBQ",
+        "percent": 48,
+        "date_start": "2023-03-23",
+        "date_end": "2023-09-07",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 894,
+    "fields": {
+        "name": "WCYAGB57",
+        "percent": 3,
+        "date_start": "2023-03-24",
+        "date_end": "2023-08-03",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 895,
+    "fields": {
+        "name": "CSLQGBCP",
+        "percent": 8,
+        "date_start": "2023-03-11",
+        "date_end": "2023-05-24",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 896,
+    "fields": {
+        "name": "ZIQIGB6K",
+        "percent": 41,
+        "date_start": "2023-03-18",
+        "date_end": "2023-06-15",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 897,
+    "fields": {
+        "name": "DTKPGBW2",
+        "percent": 16,
+        "date_start": "2023-03-05",
+        "date_end": "2023-04-23",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 898,
+    "fields": {
+        "name": "RMWDGBSB",
+        "percent": 14,
+        "date_start": "2023-03-27",
+        "date_end": "2023-06-03",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 899,
+    "fields": {
+        "name": "QSMKGBRU",
+        "percent": 28,
+        "date_start": "2023-03-17",
+        "date_end": "2023-04-03",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 900,
+    "fields": {
+        "name": "EUWWGBNI",
+        "percent": 5,
+        "date_start": "2023-03-04",
+        "date_end": "2023-04-08",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 901,
+    "fields": {
+        "name": "QPVGGB0I",
+        "percent": 19,
+        "date_start": "2023-03-09",
+        "date_end": "2023-09-19",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 902,
+    "fields": {
+        "name": "KDFIGB3V",
+        "percent": 23,
+        "date_start": "2023-03-14",
+        "date_end": "2023-09-26",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 903,
+    "fields": {
+        "name": "IVDWGBBQ",
+        "percent": 37,
+        "date_start": "2023-03-21",
+        "date_end": "2023-04-30",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 904,
+    "fields": {
+        "name": "LIKJGB71",
+        "percent": 17,
+        "date_start": "2023-03-05",
+        "date_end": "2023-09-16",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 905,
+    "fields": {
+        "name": "GRABGBAQ",
+        "percent": 19,
+        "date_start": "2023-03-28",
+        "date_end": "2023-06-12",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 906,
+    "fields": {
+        "name": "NWKWGBG6",
+        "percent": 38,
+        "date_start": "2023-03-24",
+        "date_end": "2023-07-07",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 907,
+    "fields": {
+        "name": "VORTGBHC",
+        "percent": 5,
+        "date_start": "2023-03-04",
+        "date_end": "2023-06-28",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 908,
+    "fields": {
+        "name": "VXMFGBM0",
+        "percent": 21,
+        "date_start": "2023-03-20",
+        "date_end": "2023-08-21",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 909,
+    "fields": {
+        "name": "HBGTGBSQ",
+        "percent": 19,
+        "date_start": "2023-03-18",
+        "date_end": "2023-06-28",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 910,
+    "fields": {
+        "name": "AIERGB2T",
+        "percent": 50,
+        "date_start": "2023-03-03",
+        "date_end": "2023-06-20",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 911,
+    "fields": {
+        "name": "FIBLGBA4",
+        "percent": 19,
+        "date_start": "2023-03-19",
+        "date_end": "2023-04-12",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 912,
+    "fields": {
+        "name": "MCZVGBK8",
+        "percent": 26,
+        "date_start": "2023-03-21",
+        "date_end": "2023-07-20",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 913,
+    "fields": {
+        "name": "PNMKGBIN",
+        "percent": 47,
+        "date_start": "2023-03-27",
+        "date_end": "2023-08-12",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 914,
+    "fields": {
+        "name": "DXDBGBEI",
+        "percent": 13,
+        "date_start": "2023-03-26",
+        "date_end": "2023-06-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 915,
+    "fields": {
+        "name": "JLTEGBA8",
+        "percent": 25,
+        "date_start": "2023-03-08",
+        "date_end": "2023-05-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 916,
+    "fields": {
+        "name": "FOKTGB0I",
+        "percent": 39,
+        "date_start": "2023-03-19",
+        "date_end": "2023-07-16",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 917,
+    "fields": {
+        "name": "CDYVGB1P",
+        "percent": 33,
+        "date_start": "2023-03-26",
+        "date_end": "2023-09-07",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 918,
+    "fields": {
+        "name": "XXTCGBBA",
+        "percent": 42,
+        "date_start": "2023-03-29",
+        "date_end": "2023-07-18",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 919,
+    "fields": {
+        "name": "RKDSGBH9",
+        "percent": 25,
+        "date_start": "2023-03-15",
+        "date_end": "2023-07-12",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 920,
+    "fields": {
+        "name": "IZXCGBGU",
+        "percent": 3,
+        "date_start": "2023-03-22",
+        "date_end": "2023-05-15",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 921,
+    "fields": {
+        "name": "JFZKGB19",
+        "percent": 17,
+        "date_start": "2023-03-02",
+        "date_end": "2023-09-19",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 922,
+    "fields": {
+        "name": "MBVOGB5T",
+        "percent": 42,
+        "date_start": "2023-03-02",
+        "date_end": "2023-06-05",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 923,
+    "fields": {
+        "name": "IROMGBCN",
+        "percent": 42,
+        "date_start": "2023-03-28",
+        "date_end": "2023-04-17",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 924,
+    "fields": {
+        "name": "YBSIGBZM",
+        "percent": 33,
+        "date_start": "2023-03-03",
+        "date_end": "2023-08-06",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 925,
+    "fields": {
+        "name": "PMNDGBXX",
+        "percent": 24,
+        "date_start": "2023-03-28",
+        "date_end": "2023-07-04",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 926,
+    "fields": {
+        "name": "QXWCGBXH",
+        "percent": 35,
+        "date_start": "2023-03-07",
+        "date_end": "2023-04-27",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 927,
+    "fields": {
+        "name": "XLIHGBIH",
+        "percent": 25,
+        "date_start": "2023-03-12",
+        "date_end": "2023-08-21",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 928,
+    "fields": {
+        "name": "LRWQGBID",
+        "percent": 40,
+        "date_start": "2023-03-22",
+        "date_end": "2023-04-16",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 929,
+    "fields": {
+        "name": "VRQSGB1C",
+        "percent": 20,
+        "date_start": "2023-03-29",
+        "date_end": "2023-04-07",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 930,
+    "fields": {
+        "name": "ZYLLGB8U",
+        "percent": 38,
+        "date_start": "2023-03-04",
+        "date_end": "2023-04-27",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 931,
+    "fields": {
+        "name": "IDBRGBG4",
+        "percent": 16,
+        "date_start": "2023-03-06",
+        "date_end": "2023-06-11",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 932,
+    "fields": {
+        "name": "YGDQGBTF",
+        "percent": 23,
+        "date_start": "2023-03-06",
+        "date_end": "2023-07-02",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 933,
+    "fields": {
+        "name": "QJNMGBH8",
+        "percent": 30,
+        "date_start": "2023-03-15",
+        "date_end": "2023-06-16",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 934,
+    "fields": {
+        "name": "QPWNGBTK",
+        "percent": 1,
+        "date_start": "2023-03-25",
+        "date_end": "2023-06-25",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 935,
+    "fields": {
+        "name": "OFJCGBMQ",
+        "percent": 27,
+        "date_start": "2023-03-10",
+        "date_end": "2023-06-24",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 936,
+    "fields": {
+        "name": "OFZLGBOO",
+        "percent": 14,
+        "date_start": "2023-03-25",
+        "date_end": "2023-06-02",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 937,
+    "fields": {
+        "name": "YTJAGB19",
+        "percent": 27,
+        "date_start": "2023-03-26",
+        "date_end": "2023-05-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 938,
+    "fields": {
+        "name": "CPCRGBMV",
+        "percent": 10,
+        "date_start": "2023-03-01",
+        "date_end": "2023-05-09",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 939,
+    "fields": {
+        "name": "KZKMGBAR",
+        "percent": 24,
+        "date_start": "2023-03-15",
+        "date_end": "2023-08-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 940,
+    "fields": {
+        "name": "TOOOGBPF",
+        "percent": 8,
+        "date_start": "2023-03-02",
+        "date_end": "2023-09-10",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 941,
+    "fields": {
+        "name": "JIFHGB4R",
+        "percent": 14,
+        "date_start": "2023-03-21",
+        "date_end": "2023-06-14",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 942,
+    "fields": {
+        "name": "XTWLGBIK",
+        "percent": 4,
+        "date_start": "2023-03-15",
+        "date_end": "2023-06-28",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 943,
+    "fields": {
+        "name": "KNEQGBLX",
+        "percent": 7,
+        "date_start": "2023-03-27",
+        "date_end": "2023-05-18",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 944,
+    "fields": {
+        "name": "HMJSGBB7",
+        "percent": 21,
+        "date_start": "2023-03-15",
+        "date_end": "2023-06-24",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 945,
+    "fields": {
+        "name": "LAUSGBJD",
+        "percent": 10,
+        "date_start": "2023-03-05",
+        "date_end": "2023-09-09",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 946,
+    "fields": {
+        "name": "WENTGBLK",
+        "percent": 9,
+        "date_start": "2023-03-09",
+        "date_end": "2023-06-26",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 947,
+    "fields": {
+        "name": "CMXOGBL6",
+        "percent": 25,
+        "date_start": "2023-03-22",
+        "date_end": "2023-07-29",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 948,
+    "fields": {
+        "name": "FRBQGB84",
+        "percent": 2,
+        "date_start": "2023-03-29",
+        "date_end": "2023-04-18",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 949,
+    "fields": {
+        "name": "KCUQGBUQ",
+        "percent": 32,
+        "date_start": "2023-03-05",
+        "date_end": "2023-09-13",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 950,
+    "fields": {
+        "name": "CCNIGB3Q",
+        "percent": 46,
+        "date_start": "2023-03-22",
+        "date_end": "2023-04-25",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 951,
+    "fields": {
+        "name": "FMMFGBI5",
+        "percent": 22,
+        "date_start": "2023-03-15",
+        "date_end": "2023-08-31",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 952,
+    "fields": {
+        "name": "FLPDGBV0",
+        "percent": 13,
+        "date_start": "2023-03-27",
+        "date_end": "2023-04-16",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 953,
+    "fields": {
+        "name": "TOMNGBCB",
+        "percent": 30,
+        "date_start": "2023-03-09",
+        "date_end": "2023-08-02",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 954,
+    "fields": {
+        "name": "VSRVGBA8",
+        "percent": 8,
+        "date_start": "2023-03-29",
+        "date_end": "2023-06-20",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 955,
+    "fields": {
+        "name": "DVRQGB7Q",
+        "percent": 29,
+        "date_start": "2023-03-17",
+        "date_end": "2023-07-05",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 956,
+    "fields": {
+        "name": "YGKFGBQE",
+        "percent": 15,
+        "date_start": "2023-03-02",
+        "date_end": "2023-04-28",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 957,
+    "fields": {
+        "name": "KYFKGBMP",
+        "percent": 30,
+        "date_start": "2023-03-26",
+        "date_end": "2023-09-29",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 958,
+    "fields": {
+        "name": "SQMNGB1G",
+        "percent": 2,
+        "date_start": "2023-03-09",
+        "date_end": "2023-04-07",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 959,
+    "fields": {
+        "name": "DEGMGB43",
+        "percent": 12,
+        "date_start": "2023-03-16",
+        "date_end": "2023-09-15",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 960,
+    "fields": {
+        "name": "DWEOGBMQ",
+        "percent": 40,
+        "date_start": "2023-03-13",
+        "date_end": "2023-06-05",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 961,
+    "fields": {
+        "name": "YVFIGB33",
+        "percent": 16,
+        "date_start": "2023-03-10",
+        "date_end": "2023-04-15",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 962,
+    "fields": {
+        "name": "BEFMGBDO",
+        "percent": 1,
+        "date_start": "2023-03-08",
+        "date_end": "2023-08-15",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 963,
+    "fields": {
+        "name": "JTGOGB4W",
+        "percent": 12,
+        "date_start": "2023-03-22",
+        "date_end": "2023-05-22",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 964,
+    "fields": {
+        "name": "XXFWGBMM",
+        "percent": 2,
+        "date_start": "2023-03-18",
+        "date_end": "2023-04-05",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 965,
+    "fields": {
+        "name": "OWGOGBJQ",
+        "percent": 14,
+        "date_start": "2023-03-26",
+        "date_end": "2023-09-14",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 966,
+    "fields": {
+        "name": "MLVRGB0A",
+        "percent": 45,
+        "date_start": "2023-03-18",
+        "date_end": "2023-05-10",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 967,
+    "fields": {
+        "name": "BKJAGBZW",
+        "percent": 3,
+        "date_start": "2023-03-26",
+        "date_end": "2023-09-13",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 968,
+    "fields": {
+        "name": "HKPFGB8C",
+        "percent": 43,
+        "date_start": "2023-03-12",
+        "date_end": "2023-08-09",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 969,
+    "fields": {
+        "name": "YXATGBN1",
+        "percent": 38,
+        "date_start": "2023-03-28",
+        "date_end": "2023-04-30",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 970,
+    "fields": {
+        "name": "TFPSGBCD",
+        "percent": 41,
+        "date_start": "2023-03-13",
+        "date_end": "2023-04-23",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 971,
+    "fields": {
+        "name": "PAXJGBEU",
+        "percent": 34,
+        "date_start": "2023-03-13",
+        "date_end": "2023-07-12",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 972,
+    "fields": {
+        "name": "CILXGB4B",
+        "percent": 32,
+        "date_start": "2023-03-29",
+        "date_end": "2023-08-12",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 973,
+    "fields": {
+        "name": "QFQWGB1C",
+        "percent": 16,
+        "date_start": "2023-03-19",
+        "date_end": "2023-07-13",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 974,
+    "fields": {
+        "name": "JIHVGBAO",
+        "percent": 21,
+        "date_start": "2023-03-03",
+        "date_end": "2023-09-13",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 975,
+    "fields": {
+        "name": "GDQZGBLC",
+        "percent": 2,
+        "date_start": "2023-03-15",
+        "date_end": "2023-08-21",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 976,
+    "fields": {
+        "name": "ZBZUGBXV",
+        "percent": 5,
+        "date_start": "2023-03-10",
+        "date_end": "2023-09-30",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 977,
+    "fields": {
+        "name": "UNZMGBA6",
+        "percent": 19,
+        "date_start": "2023-03-05",
+        "date_end": "2023-07-09",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 978,
+    "fields": {
+        "name": "XGAZGBCG",
+        "percent": 42,
+        "date_start": "2023-03-25",
+        "date_end": "2023-09-19",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 979,
+    "fields": {
+        "name": "CPEKGB9R",
+        "percent": 41,
+        "date_start": "2023-03-04",
+        "date_end": "2023-09-17",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 980,
+    "fields": {
+        "name": "TTEKGB12",
+        "percent": 30,
+        "date_start": "2023-03-16",
+        "date_end": "2023-05-31",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 981,
+    "fields": {
+        "name": "SMCFGB8G",
+        "percent": 13,
+        "date_start": "2023-03-17",
+        "date_end": "2023-06-11",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 982,
+    "fields": {
+        "name": "DOBKGBR3",
+        "percent": 49,
+        "date_start": "2023-03-14",
+        "date_end": "2023-06-30",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 983,
+    "fields": {
+        "name": "KMLZGBJP",
+        "percent": 23,
+        "date_start": "2023-03-11",
+        "date_end": "2023-09-07",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 984,
+    "fields": {
+        "name": "DMJJGBP7",
+        "percent": 5,
+        "date_start": "2023-03-18",
+        "date_end": "2023-08-09",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 985,
+    "fields": {
+        "name": "GNLRGBSZ",
+        "percent": 38,
+        "date_start": "2023-03-05",
+        "date_end": "2023-04-20",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 986,
+    "fields": {
+        "name": "TYJOGBHE",
+        "percent": 42,
+        "date_start": "2023-03-24",
+        "date_end": "2023-05-24",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 987,
+    "fields": {
+        "name": "WJDHGBDP",
+        "percent": 26,
+        "date_start": "2023-03-26",
+        "date_end": "2023-06-08",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 988,
+    "fields": {
+        "name": "ARLRGB4R",
+        "percent": 21,
+        "date_start": "2023-03-22",
+        "date_end": "2023-06-04",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 989,
+    "fields": {
+        "name": "DJVHGBUE",
+        "percent": 47,
+        "date_start": "2023-03-26",
+        "date_end": "2023-06-16",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 990,
+    "fields": {
+        "name": "LVIMGBDB",
+        "percent": 31,
+        "date_start": "2023-03-02",
+        "date_end": "2023-08-27",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 991,
+    "fields": {
+        "name": "TXKLGBFQ",
+        "percent": 15,
+        "date_start": "2023-03-24",
+        "date_end": "2023-09-06",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 992,
+    "fields": {
+        "name": "QKFHGBXK",
+        "percent": 19,
+        "date_start": "2023-03-03",
+        "date_end": "2023-04-06",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 993,
+    "fields": {
+        "name": "OYBWGBHU",
+        "percent": 3,
+        "date_start": "2023-03-19",
+        "date_end": "2023-08-06",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 994,
+    "fields": {
+        "name": "MSKZGBSM",
+        "percent": 3,
+        "date_start": "2023-03-11",
+        "date_end": "2023-07-18",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 995,
+    "fields": {
+        "name": "JJKPGBMN",
+        "percent": 22,
+        "date_start": "2023-03-25",
+        "date_end": "2023-07-09",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 996,
+    "fields": {
+        "name": "PYFYGBD3",
+        "percent": 45,
+        "date_start": "2023-03-19",
+        "date_end": "2023-04-19",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 997,
+    "fields": {
+        "name": "EKMGGBGB",
+        "percent": 36,
+        "date_start": "2023-03-27",
+        "date_end": "2023-07-09",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 998,
+    "fields": {
+        "name": "DYIJGBHW",
+        "percent": 1,
+        "date_start": "2023-03-01",
+        "date_end": "2023-10-08",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 999,
+    "fields": {
+        "name": "UKRSGBEQ",
+        "percent": 45,
+        "date_start": "2023-03-19",
+        "date_end": "2023-07-19",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1000,
+    "fields": {
+        "name": "BBCAGBRT",
+        "percent": 12,
+        "date_start": "2023-03-17",
+        "date_end": "2023-05-28",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1001,
+    "fields": {
+        "name": "INDEGBA5",
+        "percent": 43,
+        "date_start": "2023-03-06",
+        "date_end": "2023-08-14",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1002,
+    "fields": {
+        "name": "CTDYGBYE",
+        "percent": 30,
+        "date_start": "2023-03-24",
+        "date_end": "2023-06-28",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1003,
+    "fields": {
+        "name": "OKORGBNS",
+        "percent": 12,
+        "date_start": "2023-03-09",
+        "date_end": "2023-06-17",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1004,
+    "fields": {
+        "name": "WYVGGBD7",
+        "percent": 13,
+        "date_start": "2023-03-01",
+        "date_end": "2023-05-24",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1005,
+    "fields": {
+        "name": "AUSDGBAH",
+        "percent": 29,
+        "date_start": "2023-03-15",
+        "date_end": "2023-04-20",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1006,
+    "fields": {
+        "name": "IYHAGB3F",
+        "percent": 35,
+        "date_start": "2023-03-21",
+        "date_end": "2023-07-25",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1007,
+    "fields": {
+        "name": "LJENGBCZ",
+        "percent": 8,
+        "date_start": "2023-03-03",
+        "date_end": "2023-05-21",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1008,
+    "fields": {
+        "name": "DVCFGBV5",
+        "percent": 10,
+        "date_start": "2023-03-24",
+        "date_end": "2023-08-21",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1009,
+    "fields": {
+        "name": "QPTKGBRN",
+        "percent": 40,
+        "date_start": "2023-03-18",
+        "date_end": "2023-05-28",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1010,
+    "fields": {
+        "name": "BXTMGB67",
+        "percent": 42,
+        "date_start": "2023-03-28",
+        "date_end": "2023-08-28",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1011,
+    "fields": {
+        "name": "KVJXGB0C",
+        "percent": 11,
+        "date_start": "2023-03-02",
+        "date_end": "2023-07-30",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1012,
+    "fields": {
+        "name": "DGTCGBSQ",
+        "percent": 37,
+        "date_start": "2023-03-05",
+        "date_end": "2023-05-07",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1013,
+    "fields": {
+        "name": "QQJAGBEG",
+        "percent": 10,
+        "date_start": "2023-03-12",
+        "date_end": "2023-06-30",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1014,
+    "fields": {
+        "name": "SNAAGB0H",
+        "percent": 17,
+        "date_start": "2023-03-17",
+        "date_end": "2023-06-18",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1015,
+    "fields": {
+        "name": "NTQCGBR3",
+        "percent": 17,
+        "date_start": "2023-03-02",
+        "date_end": "2023-08-18",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1016,
+    "fields": {
+        "name": "XCTFGB86",
+        "percent": 8,
+        "date_start": "2023-03-11",
+        "date_end": "2023-08-01",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1017,
+    "fields": {
+        "name": "LNUCGBAH",
+        "percent": 17,
+        "date_start": "2023-03-16",
+        "date_end": "2023-07-25",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1018,
+    "fields": {
+        "name": "WRFTGBC4",
+        "percent": 24,
+        "date_start": "2023-03-27",
+        "date_end": "2023-04-22",
+        "is_cumulative": false
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1019,
+    "fields": {
+        "name": "CXBLGBCM",
+        "percent": 33,
+        "date_start": "2023-03-05",
+        "date_end": "2023-08-23",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1020,
+    "fields": {
+        "name": "FNWSGBK1",
+        "percent": 24,
+        "date_start": "2023-03-06",
+        "date_end": "2023-09-26",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1021,
+    "fields": {
+        "name": "MQDLGBJB",
+        "percent": 31,
+        "date_start": "2023-03-19",
+        "date_end": "2023-04-06",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1022,
+    "fields": {
+        "name": "VZYNGB9H",
+        "percent": 19,
+        "date_start": "2023-03-02",
+        "date_end": "2023-09-05",
+        "is_cumulative": true
+    }
+},
+{
+    "model": "catalog.promocode",
+    "pk": 1023,
+    "fields": {
+        "name": "name",
+        "percent": 20,
+        "date_start": "2023-03-01",
+        "date_end": "2023-03-31",
+        "is_cumulative": false
+    }
+}
+]

@@ -1,0 +1,36 @@
+[
+{
+    "model": "users.customuser",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$e3zWgagP7CqtHK053gu9Uw$LIWS2Yhra43lyDvi53SQxChnnGe2g/GIl4CwcmiPf/A=",
+        "last_login": "2023-04-04T17:48:12.236Z",
+        "email": "test@test.com",
+        "first_name": null,
+        "last_name": null,
+        "phone_number": null,
+        "cashback_point": 0,
+        "is_superuser": true,
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-03-28T18:16:57.041Z"
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$kLfbUCS2FjGB6w8vyDgHbD$KqTLiF0NBbC0FOZqsyEUdzsyYm5NeIVnla3osFYpn6g=",
+        "last_login": null,
+        "email": "maximchik.alexandr@yandex.ru",
+        "first_name": null,
+        "last_name": null,
+        "phone_number": null,
+        "cashback_point": 0,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-01T11:57:34.273Z"
+    }
+}
+]
