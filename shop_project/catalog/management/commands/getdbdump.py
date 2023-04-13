@@ -20,9 +20,10 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         for model in self.models:
+            name_fixture = model.replace(".", "_").lower()
             call_command(
                 "dumpdata",
-                f"--output={settings.BASE_DIR}/catalog/tests/fixtures/{model}.json",
+                f"--output={settings.BASE_DIR}/catalog/tests/fixtures/{name_fixture}.json",
                 "--indent=4",
                 "--format=json",
                 model,
