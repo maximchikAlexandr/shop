@@ -2,7 +2,7 @@ from django.apps import apps
 from django.core.management import call_command
 from django.core.management.base import BaseCommand
 
-from shop_project.settings import BASE_DIR
+from django.conf import settings
 
 name_apps = [
     "users",
@@ -22,7 +22,7 @@ class Command(BaseCommand):
         for model in self.models:
             call_command(
                 "dumpdata",
-                f"--output={BASE_DIR}/catalog/tests/fixtures/{model}.json",
+                f"--output={settings.BASE_DIR}/catalog/tests/fixtures/{model}.json",
                 "--indent=4",
                 "--format=json",
                 model,
