@@ -19,10 +19,14 @@ class ClientEndpointsTestCase(APITestCase):
     ]
 
     def setUp(self):
+        """
+        Create a list of dictionaries based on json fixtures.
+        Fixtures are located in the path 'PATH_TO_FIXTURES'
+        """
         for fix_path in self.fixtures:
             with open(fix_path, "r", encoding="utf-8") as fixture_file:
                 fixture = json.load(fixture_file)
-                attr_name = os.path.basename(fixture_file.name)
+                attr_name = os.path.basename(fix_path)
                 attr_name = attr_name.rstrip(".json")
             setattr(self, attr_name, [])
 
@@ -52,26 +56,36 @@ class ClientEndpointsTestCase(APITestCase):
             f"The response data does not match original fixture. URL: {url}"
 
     def check_with_nested_serializers(self, response, url, fixture, nested_fixtures):
-        for fix in nested_fixtures:
-            locals()[f"nested_{fix}"] = []
 
+        nested_from_response = {fix: [] for fix in nested_fixtures}
         response_data = [dict(obj) for obj in response.data]
         original_data = getattr(self, fixture)
 
         for orig_obj, resp_obj in zip(original_data, response_data):
             ddiff = dict(DeepDiff(orig_obj, resp_obj, ignore_order=True))
-            for model, change in ddiff['type_changes'].items():
-                assert change["old_value"] == change["new_value"]["id"]
-                if model == "root['discount']":
-                    locals()["nested_catalog_discount"].append(change["new_value"])
-                elif model == "root['category']":
-                    locals()["nested_catalog_category"].append(change["new_value"])
-                elif model == "root['producer']":
-                    locals()["nested_catalog_producer"].append(change["new_value"])
 
+            # ddiff, orig_obj, url
+            for model_name, change in ddiff['type_changes'].items():
+                assert change["old_value"] == change["new_value"]["id"], \
+                f"Field 'id' in objects from the nested serializer do not match field 'id' from " \
+                f"the original fixture {orig_obj}. URL: {url}"
+
+                print(change)
+
+                # def get_nested_obj_from_response(nested_fixtures, model, nested_from_response, change)
+                for obj in nested_fixtures:
+                    if model_name == f"root['{obj.split('_')[0]}']":
+                        nested_from_response[obj].append(change["new_value"])
+
+        self.compare_nested_objects(nested_fixtures, nested_from_response, url)
+
+
+    def compare_nested_objects(self, nested_fixtures, nested, url):
         for fix in nested_fixtures:
-            assert [i for i in locals()[f"nested_{fix}"] if i not in getattr(self, fix)] == []
-
+            list_of_differences = [obj for obj in nested[fix] if obj not in getattr(self, fix)]
+            assert list_of_differences == [], \
+                f"A objects from the nested serializer do not match source fixture {fix}. " \
+                f"URL: {url}"
 
     def test_categories(self):
         self.check_response(
@@ -104,7 +118,7 @@ class ClientEndpointsTestCase(APITestCase):
                 "catalog_producer",
             ]
         )
-    #
+
     # def test_category_products(self):
     #     self.check_response(
     #         url="category_products", fixture="catalog_product",
