@@ -70,18 +70,23 @@ class ClientEndpointsTestCase(APITestCase):
                 f"Field 'id' in objects from the nested serializer do not match field 'id' from " \
                 f"the original fixture {orig_obj}. URL: {url}"
 
-                print(change)
-
                 # def get_nested_obj_from_response(nested_fixtures, model, nested_from_response, change)
+                assert len(model_name) > 1
+                assert isinstance(model_name, str)
                 for obj in nested_fixtures:
-                    if model_name == f"root['{obj.split('_')[0]}']":
+                    # assert f"root['{obj.split('_')[1]}']" in ddiff['type_changes']
+                    if model_name == f"root['{obj.split('_')[1]}']":
                         nested_from_response[obj].append(change["new_value"])
 
         self.compare_nested_objects(nested_fixtures, nested_from_response, url)
 
 
     def compare_nested_objects(self, nested_fixtures, nested, url):
+        for x in nested:
+            assert len(x) > 0
+
         for fix in nested_fixtures:
+            assert len(fix) > 0
             list_of_differences = [obj for obj in nested[fix] if obj not in getattr(self, fix)]
             assert list_of_differences == [], \
                 f"A objects from the nested serializer do not match source fixture {fix}. " \
