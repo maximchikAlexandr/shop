@@ -11,6 +11,7 @@ from catalog.serializers import (
     PromocodeSerializer,
 )
 from django.db.models import F
+from django.db.transaction import atomic
 from django.shortcuts import get_object_or_404
 from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -131,6 +132,7 @@ class BasketView(APIView):
 class OrderView(APIView):
     permission_classes = (IsAuthenticated,)
 
+    @atomic
     def post(self, request):
         input_serializer = OrderSerializer(
             data=request.data, context={"request": request}

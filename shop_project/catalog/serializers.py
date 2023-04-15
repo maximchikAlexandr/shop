@@ -7,10 +7,10 @@ from catalog.models import (
     OrderProduct,
     Producer,
     Product,
-    Promocode,
+    Promocode, Cashback,
 )
 from rest_framework import serializers
-
+from django.db.transaction import atomic
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
@@ -103,27 +103,67 @@ class OrderProductsSerializer(serializers.ModelSerializer):
 
 
 class OrderSerializer(serializers.ModelSerializer):
+    products = OrderProductsSerializer(many=True, write_only=True)
+    use_cashback = serializers.BooleanField(write_only=True)
+
     class Meta:
         model = Order
-        fields = (
-            "date_created",
-            "promocode",
-            "delivery_method",
-            "delivery_address",
-            "delivery_status",
-            "delivery_notif_in_time",
-            "payment_method",
-            "payment_status",
-            "user",
-            "result",
-            "products",
-        )
-        readonly_fields =(
-            "date_created",
-            "delivery_status",
-            "payment_status",
-            "result",
+        fields = ['date_created', 'promocode',  # , 'delivery_time' !!!!
+                  'delivery_notif_in_time', 'delivery_method',
+                  'delivery_address', 'delivery_status',
+                  'payment_method', 'payment_status',
+                  'user', 'result', 'products', 'use_cashback']
+        read_only_fields = ['date_created', 'delivery_status',
+                            'payment_status', 'result']
+
+    @atomic
+    def create(self, validated_data):
+        products = validated_data.pop("products")
+        use_cashback = validated_data.pop("use_cashback")
+        cashback = Cashback.objects.all().first()
+        promocode = validated_data.get("promocode")
+
+
+        if promocode:
+            delta_promocode = date.today() - promocode.date_end
+            if delta_promocode.days <= 0:
+                promocode.percent = 0
+
+        result_price = 0
+        for record in products:
+            if record["product"].discount:
+                percent = record["product"].discount.percent
+                date_end = record["product"].discount.date_end
+                delta = date.today() - date_end
+                if delta.days > 0:
+                    result_price += (record["product"].price * (100 - percent) / 100 * record["count"])
+                else:
+                    result_price += (record["product"].price * record["count"])
+            else:
+                result_price += (record["product"].price * record["count"])
+
+        if promocode and promocode.is_cumulative:
+            result_price = result_price * (100 - promocode.percent) / 100
+
+        if use_cashback:
+            if self.context["request"].user.cashback_point <= result_price / 2:
+                if self.context["request"].user.cashback_point > cashback.threshold:
+                    result_price -= self.context["request"].user.cashback_point
+                    self.context["request"].user.cashback_point = 0
+                    self.context["request"].user.save()
+            else:
+                if self.context["request"].user.cashback_point > cashback.threshold:
+                    self.context["request"].user.cashback_point -= result_price / 2
+                    result_price = result_price / 2
+                    self.context["request"].user.save()
+
+        order = Order.objects.create(
+            result=result_price,
+            user=self.context["request"].user,
+            **validated_data
         )
 
-    def create(self, validated_data):
-        pass
+        for product in products:
+            OrderProduct.objects.create(order=order, **product)
+
+        return order
