@@ -3,6 +3,7 @@ CREATE DATABASE "test_shop_db";
 SET TIME ZONE 'UTC';
 
 -- Запрос № 3. Повторяется 3 раза
+EXPLAIN ANALYZE
 SELECT
     c.relname,
     CASE
@@ -95,6 +96,8 @@ SET CONSTRAINTS ALL DEFERRED;
 ROLLBACK TO SAVEPOINT "s140005005358912_x3";
 RELEASE SAVEPOINT "s140005005358912_x3";
 SAVEPOINT "s140005005358912_x4";
+
+
 
 SELECT "catalog_producer"."id",
        "catalog_producer"."name",
