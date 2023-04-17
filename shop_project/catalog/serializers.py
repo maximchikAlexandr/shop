@@ -126,7 +126,7 @@ class OrderSerializer(serializers.ModelSerializer):
 
         if promocode:
             delta_promocode = date.today() - promocode.date_end
-            if delta_promocode.days <= 0:
+            if delta_promocode.days > 0:
                 promocode.percent = 0
 
         result_price = 0
@@ -135,7 +135,7 @@ class OrderSerializer(serializers.ModelSerializer):
                 percent = record["product"].discount.percent
                 date_end = record["product"].discount.date_end
                 delta = date.today() - date_end
-                if delta.days > 0:
+                if delta.days <= 0:
                     result_price += (record["product"].price * (100 - percent) / 100 * record["count"])
                 else:
                     result_price += (record["product"].price * record["count"])
