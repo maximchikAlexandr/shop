@@ -66,7 +66,7 @@ class ClientEndpointsTestCase(APITestCase):
                                                            names_of_sub_objs,
                                                            response_sub_objs)
 
-        self.compare_nested_objects(names_of_sub_objs, response_sub_objs, url)
+        self.compare_sub_objs(names_of_sub_objs, response_sub_objs, url)
 
     @staticmethod
     def add_response_sub_objs(ddiff, orig_obj, url, names_of_sub_objs, response_sub_objs):
@@ -85,7 +85,7 @@ class ClientEndpointsTestCase(APITestCase):
 
         return response_sub_objs
 
-    def compare_nested_objects(self, names_of_sub_objs, response_sub_objs, url):
+    def compare_sub_objs(self, names_of_sub_objs, response_sub_objs, url):
         for sub_obj, changes_in_obj in response_sub_objs.items():
             assert len(changes_in_obj) > 0, \
                 f"The nested serializer {sub_obj} not work correctly."
