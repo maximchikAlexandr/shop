@@ -1,21 +1,23 @@
+from catalog.models import Basket, Category, Discount, Producer, Product, Promocode
+from catalog.serializers import (
+    AddProductSerializer,
+    BasketSerializer,
+    CategorySerializer,
+    DeleteProductSerializer,
+    DiscountSerializer,
+    OrderSerializer,
+    ProducerSerializer,
+    ProductSerializer,
+    PromocodeSerializer,
+)
 from django.db.models import F
+from django.db.transaction import atomic
 from django.shortcuts import get_object_or_404
 from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from catalog.models import Category, Discount, Producer, Product, Promocode, Basket
-from catalog.serializers import (
-    AddProductSerializer,
-    BasketSerializer,
-    CategorySerializer,
-    DiscountSerializer,
-    ProducerSerializer,
-    ProductSerializer,
-    PromocodeSerializer,
-    DeleteProductSerializer,
-)
 
 class CategoriesListView(ListAPIView):
     queryset = Category.objects.all()
@@ -125,3 +127,18 @@ class BasketView(APIView):
         Basket.objects.get(user=request.user, product=product).delete()
 
         return Response()
+
+
+class OrderView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    @atomic
+    def post(self, request):
+        input_serializer = OrderSerializer(
+            data=request.data, context={"request": request}
+        )
+        input_serializer.is_valid(raise_exception=True)
+
+        order = input_serializer.save()
+
+        return Response(input_serializer.data)
