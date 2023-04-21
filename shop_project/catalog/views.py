@@ -1,3 +1,11 @@
+from django.db.models import F
+from django.db.transaction import atomic
+from django.shortcuts import get_object_or_404
+from rest_framework.generics import ListAPIView
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from catalog.models import Basket, Category, Discount, Producer, Product, Promocode
 from catalog.serializers import (
     AddProductSerializer,
@@ -10,13 +18,8 @@ from catalog.serializers import (
     ProductSerializer,
     PromocodeSerializer,
 )
-from django.db.models import F
-from django.db.transaction import atomic
-from django.shortcuts import get_object_or_404
-from rest_framework.generics import ListAPIView
-from rest_framework.permissions import AllowAny, IsAuthenticated
-from rest_framework.response import Response
-from rest_framework.views import APIView
+
+from catalog.tasks import some_task
 
 
 class CategoriesListView(ListAPIView):
@@ -31,6 +34,7 @@ class CategoryProductsListView(APIView):
     def get(self, request, category_id):
         queryset = Product.objects.filter(category__id=category_id)
         serializer = ProductSerializer(queryset, many=True)
+        some_task.delay()
         return Response(serializer.data)
 
 

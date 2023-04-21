@@ -18,7 +18,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
-
+CELERY_BROKER_URL = f"redis://{env('CELERY_HOST')}:{env('CELERY_PORT')}"
+CELERY_RESULT_BACKEND = f"redis://{env('CELERY_HOST')}:{env('CELERY_PORT')}"
+CELERY_IMPORTS = [
+    "catalog.tasks",
+]
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -52,6 +56,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "djoser",
     "rest_framework",
+    "django_celery_beat",
 
     "users",
     "catalog",
