@@ -19,8 +19,6 @@ from catalog.serializers import (
     PromocodeSerializer,
 )
 
-from catalog.tasks import some_task
-
 
 class CategoriesListView(ListAPIView):
     queryset = Category.objects.all()
@@ -34,7 +32,6 @@ class CategoryProductsListView(APIView):
     def get(self, request, category_id):
         queryset = Product.objects.filter(category__id=category_id)
         serializer = ProductSerializer(queryset, many=True)
-        some_task.delay()
         return Response(serializer.data)
 
 

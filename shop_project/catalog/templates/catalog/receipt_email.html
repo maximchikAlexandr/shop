@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Email Template</title>
+    <!-- Подключаем стили Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      /* Стили для таблицы */
+      table {
+        border-collapse: collapse;
+        margin: 20px 0;
+        width: 100%;
+      }
+
+      th, td {
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background-color: #ddd;
+        font-weight: bold;
+      }
+
+      td {
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Используем контейнер Bootstrap для центрирования содержимого -->
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price, BYN</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for product in products %}
+          <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }} </td>
+            <td>{{ product.description }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

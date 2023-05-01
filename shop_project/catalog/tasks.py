@@ -1,13 +1,7 @@
-import time
-from celery import shared_task
+from shop_project.celery import app
+from catalog.services import EmailSender
 
 
-@shared_task
-def some_task():
-    time.sleep(10)
-    return 'aboba'
-
-
-@shared_task
-def scheduled_task():
-    return 'susiubake'
+@app.task
+def send_newsletters():
+    EmailSender().send_newsletter()
