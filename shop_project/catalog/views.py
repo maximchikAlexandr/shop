@@ -1,3 +1,12 @@
+from django.db.models import F
+from django.db.transaction import atomic
+from django.shortcuts import get_object_or_404
+from drf_yasg.utils import swagger_auto_schema
+from rest_framework.generics import ListAPIView
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from catalog.models import Basket, Category, Discount, Producer, Product, Promocode
 from catalog.serializers import (
     AddProductSerializer,
@@ -10,24 +19,24 @@ from catalog.serializers import (
     ProductSerializer,
     PromocodeSerializer,
 )
-from django.db.models import F
-from django.db.transaction import atomic
-from django.shortcuts import get_object_or_404
-from rest_framework.generics import ListAPIView
-from rest_framework.permissions import AllowAny, IsAuthenticated
-from rest_framework.response import Response
-from rest_framework.views import APIView
-
 
 class CategoriesListView(ListAPIView):
     queryset = Category.objects.all()
     permission_classes = (AllowAny,)
     serializer_class = CategorySerializer
 
+    @swagger_auto_schema(responses={200: CategorySerializer}, tags=["catalog objects"])
+    def get(self, request, *args, **kwargs):
+        """Get the list of all categories."""
+        return super().get(request, *args, **kwargs)
+
 
 class CategoryProductsListView(APIView):
     permission_classes = (AllowAny,)
 
+    @swagger_auto_schema(
+        responses={200: ProductSerializer(many=True)}, tags=["products"]
+    )
     def get(self, request, category_id):
         queryset = Product.objects.filter(category__id=category_id)
         serializer = ProductSerializer(queryset, many=True)
@@ -37,6 +46,9 @@ class CategoryProductsListView(APIView):
 class DiscountProductsListView(APIView):
     permission_classes = (AllowAny,)
 
+    @swagger_auto_schema(
+        responses={200: ProductSerializer(many=True)}, tags=["products"]
+    )
     def get(self, request, discount_id):
         if discount_id == "null":
             queryset = Product.objects.filter(discount__id__isnull=True)
@@ -51,10 +63,18 @@ class ProducersListView(ListAPIView):
     permission_classes = (AllowAny,)
     serializer_class = ProducerSerializer
 
+    @swagger_auto_schema(responses={200: ProducerSerializer}, tags=["catalog objects"])
+    def get(self, request, *args, **kwargs):
+        """Get the list of all producers."""
+        return super().get(request, *args, **kwargs)
+
 
 class ProducerProductsListView(APIView):
     permission_classes = (AllowAny,)
 
+    @swagger_auto_schema(
+        responses={200: ProductSerializer(many=True)}, tags=["products"]
+    )
     def get(self, request, producer_id):
         queryset = Product.objects.filter(producer__id=producer_id)
         serializer = ProductSerializer(queryset, many=True)
@@ -66,11 +86,21 @@ class DiscountListView(ListAPIView):
     permission_classes = (AllowAny,)
     serializer_class = DiscountSerializer
 
+    @swagger_auto_schema(responses={200: DiscountSerializer}, tags=["catalog objects"])
+    def get(self, request, *args, **kwargs):
+        """Get the list of all dicounts."""
+        return super().get(request, *args, **kwargs)
+
 
 class PromocodesListView(ListAPIView):
     queryset = Promocode.objects.all()
     permission_classes = (AllowAny,)
     serializer_class = PromocodeSerializer
+
+    @swagger_auto_schema(responses={200: PromocodeSerializer}, tags=["catalog objects"])
+    def get(self, request, *args, **kwargs):
+        """Get the list of all promocodes."""
+        return super().get(request, *args, **kwargs)
 
 
 class ProductsListView(ListAPIView):
@@ -78,10 +108,16 @@ class ProductsListView(ListAPIView):
     permission_classes = (AllowAny,)
     serializer_class = ProductSerializer
 
+    @swagger_auto_schema(responses={200: PromocodeSerializer}, tags=["products"])
+    def get(self, request, *args, **kwargs):
+        """Get the list of all products."""
+        return super().get(request, *args, **kwargs)
+
 
 class BasketView(APIView):
     permission_classes = (IsAuthenticated,)
 
+    @swagger_auto_schema(responses={200: BasketSerializer}, tags=["basket"])
     def get(self, request):
         user = request.user
         basket = (
@@ -99,7 +135,15 @@ class BasketView(APIView):
         serializer = BasketSerializer({"products": basket})
         return Response(serializer.data)
 
+    @swagger_auto_schema(
+        request_body=AddProductSerializer, responses={200: ""}, tags=["basket"]
+    )
     def post(self, request):
+        """
+        number_of_items > 0 if need sum with current count of the products in basket
+        number_of_items < 0 if if need subtqract from current count of the products in basket
+        If you subtqract more than user has in teh basket
+        """
         input_serializer = AddProductSerializer(data=request.data)
         input_serializer.is_valid(raise_exception=True)
 
@@ -118,6 +162,9 @@ class BasketView(APIView):
             basket.save()
         return Response()
 
+    @swagger_auto_schema(
+        request_body=DeleteProductSerializer, responses={200: ""}, tags=["basket"]
+    )
     def delete(self, request):
         input_serializer = DeleteProductSerializer(data=request.data)
         input_serializer.is_valid(raise_exception=True)
@@ -132,7 +179,11 @@ class BasketView(APIView):
 class OrderView(APIView):
     permission_classes = (IsAuthenticated,)
 
-    @atomic
+    @swagger_auto_schema(
+        request_body=OrderSerializer,
+        responses={200: OrderSerializer},
+        tags=["catalog objects"],
+    )
     def post(self, request):
         input_serializer = OrderSerializer(
             data=request.data, context={"request": request}
