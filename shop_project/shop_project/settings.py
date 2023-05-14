@@ -86,6 +86,18 @@ AUTHENTICATION_BACKENDS = (
     "rest_framework_simplejwt.authentication.JWTAuthentication",
 )
 
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'api_key': {
+            'type': 'apiKey',
+            'description': 'Personal API Key authorization',
+            'name': 'Authorization',
+            'in': 'header',
+        }
+    }
+}
+
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -101,8 +113,8 @@ ROOT_URLCONF = "shop_project.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
         "APP_DIRS": True,
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",
