@@ -32,6 +32,9 @@ class CustomUser(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
+    discounts_newsletter = models.BooleanField(
+        default=False, verbose_name="Allow receiving a weekly newsletter with discounts"
+    )
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

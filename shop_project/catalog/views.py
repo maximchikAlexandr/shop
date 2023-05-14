@@ -1,6 +1,7 @@
 from django.db.models import F
 from django.db.transaction import atomic
 from django.shortcuts import get_object_or_404
+
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -19,6 +20,7 @@ from catalog.serializers import (
     ProductSerializer,
     PromocodeSerializer,
 )
+
 
 class CategoriesListView(ListAPIView):
     queryset = Category.objects.all()
