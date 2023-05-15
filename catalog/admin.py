@@ -1,5 +1,3 @@
-from jedi.api.refactoring import inline
-
 from catalog.models import (
     Cashback,
     Category,

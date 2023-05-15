@@ -1,8 +1,7 @@
 import pytest
-from django.contrib.auth import get_user_model
-from django.contrib.auth.hashers import make_password
+from django.conf import settings
 from django.shortcuts import reverse
-from rest_framework.test import APIClient, APITestCase
+from rest_framework.test import APITestCase
 
 pytestmark = [pytest.mark.django_db]
 
@@ -10,7 +9,7 @@ EV_EQUALS_NON_NONE = type("omnieq", (), {"__eq__": lambda x, y: y is not None})(
 
 
 class CustomerTestCase(APITestCase):
-    fixtures = ["catalog/tests/fixtures/db_fixture.json"]
+    fixtures = [settings.BASE_DIR / "catalog/tests/fixtures/db_fixture.json"]
 
     def check_response(self, url, kwargs):
         url = reverse(url, kwargs=kwargs)
