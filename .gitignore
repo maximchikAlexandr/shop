@@ -1,3 +1,2 @@
 .env
-/shop_project/.pytest_cache/
-/.idea/
+.idea/
