@@ -12,6 +12,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     "every": {
         "task": "catalog.tasks.send_newsletters",
-        "schedule": crontab(minute="0", hour="0", day_of_week="mon"),
+        "schedule": crontab(minute="48", hour="19", day_of_week="mon"),
     },
 }
