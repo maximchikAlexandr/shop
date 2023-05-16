@@ -36,12 +36,12 @@ DJANGO_SETTINGS_MODULE=shop_project.settings
 DEBUG=True
 POSTGRES_DB=some_db
 POSTGRES_USER=postgres
-POSTGRES_PASSWORD=some_password1
+POSTGRES_PASSWORD=You PostgreSQL password
 POSTGRES_HOST=postgres_db
 POSTGRES_PORT=some_port1
 DB_OUT_PORT=some_port2
 EMAIL_HOST_PASSWORD=some_password2
-EMAIL_HOST_USER=our_email
+EMAIL_HOST_USER=Your full Gmail address
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
@@ -56,9 +56,17 @@ Create and start the docker containers:
 docker compose up -d
 ```
 
-Open up the browser and navigate to the main page of the project at http://localhost:8001/.
+Open up the browser and navigate to the admin page of the project at http://localhost:8001/admin/.
 
 ## Gmail SMTP server
-SMTP (Simple Mail Transfer Protocol) 
+To use the application, access to a Simple Mail Transfer Protocol (SMTP) server is required. 
+To set up Gmail SMTP, obtain the password for your application. 
+Instructions on how to do this are provided in the documentation: 
 
-## Swagger
+https://support.google.com/accounts/answer/185833
+
+
+## API Documentation
+Для документации API используется Swagger. Документация доступна по следующей ссылке:
+Swagger is utilized for API documentation. The documentation can be accessed through the following link:
+http://localhost:8001/doc/
