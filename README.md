@@ -67,6 +67,5 @@ https://support.google.com/accounts/answer/185833
 
 
 ## API Documentation
-Для документации API используется Swagger. Документация доступна по следующей ссылке:
 Swagger is utilized for API documentation. The documentation can be accessed through the following link:
 http://localhost:8001/doc/
