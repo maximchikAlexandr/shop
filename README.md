@@ -31,23 +31,30 @@ nano .env
 and fill it with the following environment variables:
 
 ```sh
-SECRET_KEY=some_key
-DJANGO_SETTINGS_MODULE=shop_project.settings
+# Django application parameters
 DEBUG=True
-POSTGRES_DB=some_db
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=You PostgreSQL password
-POSTGRES_HOST=postgres_db
-POSTGRES_PORT=some_port1
-DB_OUT_PORT=some_port2
-EMAIL_HOST_PASSWORD=some_password2
-EMAIL_HOST_USER=Your full Gmail address
+SECRET_KEY="the_key_used_for_encryption"
+DJANGO_SETTINGS_MODULE=shop_project.settings
+
+# Database parameters
+POSTGRES_DB="database_name"
+POSTGRES_USER="your_database_username"
+POSTGRES_PASSWORD="your_database_password"
+POSTGRES_HOST="your_database_host"
+POSTGRES_PORT="port_of_your_database_in_container"
+DB_OUT_PORT="outer_port_of_your_database"
+
+# Email sending parameters
+EMAIL_HOST_PASSWORD="gmail_password_for_your_application"
+EMAIL_HOST_USER="your_full_gmail_address"
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
 EMAIL_USE_SSL=False
-CELERY_PORT=some_port2
-CELERY_HOST=some_host
+
+# Celery parameters
+CELERY_PORT="celery_port"
+CELERY_HOST="celery_host"
 ```
 
 Create and start the docker containers:
@@ -56,16 +63,24 @@ Create and start the docker containers:
 docker compose up -d
 ```
 
-Open up the browser and navigate to the admin page of the project at http://localhost:8001/admin/.
+If the application is deployed on the local machine, open the browser and navigate to the 
+project's admin page at: 
+```sh
+http://localhost:8001/admin/
+```
 
 ## Gmail SMTP server
 To use the application, access to a Simple Mail Transfer Protocol (SMTP) server is required. 
 To set up Gmail SMTP, obtain the password for your application. 
 Instructions on how to do this are provided in the documentation: 
-
+```sh
 https://support.google.com/accounts/answer/185833
-
+```
 
 ## API Documentation
-Swagger is utilized for API documentation. The documentation can be accessed through the following link:
+Swagger is utilized for API documentation. If the application is deployed on the local machine, 
+the documentation can be accessed through the following link:
+
+```sh
 http://localhost:8001/doc/
+```
