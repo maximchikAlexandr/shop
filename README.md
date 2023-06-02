@@ -65,22 +65,21 @@ docker compose up -d
 
 If the application is deployed on the local machine, open the browser and navigate to the 
 project's admin page at: 
-```sh
+
 http://localhost:8001/admin/
-```
+
 
 ## Gmail SMTP server
 To use the application, access to a Simple Mail Transfer Protocol (SMTP) server is required. 
 To set up Gmail SMTP, obtain the password for your application. 
 Instructions on how to do this are provided in the documentation: 
-```sh
+
 https://support.google.com/accounts/answer/185833
-```
+
 
 ## API Documentation
 Swagger is utilized for API documentation. If the application is deployed on the local machine, 
 the documentation can be accessed through the following link:
 
-```sh
+
 http://localhost:8001/doc/
-```
