@@ -1,9 +1,7 @@
 import logging
 
-import requests
 from aiogram import Bot, Dispatcher, types
 from django.conf import settings
-from django.contrib.auth.hashers import make_password
 
 from bot.keyboard import bot_keyboard
 from bot.utils import get_data_from_api, get_user_by_chat_id
