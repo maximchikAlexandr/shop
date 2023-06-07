@@ -1,15 +1,9 @@
+from typing import Optional
+
 import requests
-from asgiref.sync import sync_to_async
 from django.conf import settings
 
-from users.models import CustomUser
 
-
-def get_data_from_api(uri: str) -> dict:
+def get_data_from_api(uri: str, headers: Optional[dict] = None) -> dict:
     url = f"http://{settings.DJANGO_APP_HOST}:{settings.DJANGO_APP_PORT}/{uri}/"
-    return requests.get(url).json()
-
-
-@sync_to_async
-def get_user_by_chat_id(tg_chat_id: int) -> CustomUser:
-    return CustomUser.objects.get(tg_chat_id=tg_chat_id)
+    return requests.get(url, headers=headers, timeout=5).json()

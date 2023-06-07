@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types
 from django.conf import settings
 
 from bot.keyboard import bot_keyboard
-from bot.utils import get_data_from_api, get_user_by_chat_id
+from bot.utils import get_data_from_api
 
 logging.basicConfig(level=logging.DEBUG)
 bot = Bot(token=settings.TELEGRAM_TOKEN)
@@ -20,6 +20,7 @@ async def cmd_start(message: types.Message):
 @dp.message_handler(lambda message: message.text == "Categories")
 async def cmd_get_categories(msg: types.Message):
     categories = get_data_from_api("api/catalog/catigories")
+    await bot.send_message(msg.chat.id, f"{msg.chat.id=}")
     msg_to_answer = ""
     for cat in categories[:COUNT_OBJS]:
         msg_to_answer += (
@@ -83,15 +84,16 @@ async def cmd_get_products(msg: types.Message):
 
 
 @dp.message_handler(lambda message: message.text == "Show Users cart")
-async def cmd_get_users_cart(message: types.Message):
-    try:
-        user = await get_user_by_chat_id(tg_chat_id=message.chat.id)
-        if user is not None:
-            await bot.send_message(message.chat.id, f"User is exist: {user}")
-        else:
-            await bot.send_message(message.chat.id, f"User is not exist")
-    except Exception as e:
-        await bot.send_message(message.chat.id, f"{type(e).__name__} - {e}")
+async def cmd_get_users_cart(msg: types.Message):
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"tg_chat_id {msg.chat.id}",
+    }
+    cart = get_data_from_api(uri="api/catalog/cart", headers=headers)
+    msg_to_answer = (
+        f"products: {cart['products']}\n" f"result_price:{cart['result_price']}"
+    )
+    await bot.send_message(msg.chat.id, msg_to_answer)
 
 
 @dp.message_handler(commands=["chatid"])

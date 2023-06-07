@@ -9,4 +9,3 @@ bot_keyboard.add(
     KeyboardButton("Products"),
     KeyboardButton("Show Users cart")
 )
-

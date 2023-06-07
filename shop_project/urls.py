@@ -55,7 +55,7 @@ urlpatterns = [
     ),
 
     path("admin/", admin.site.urls),
-    path("users/", include("users.urls")),
+    path("", include("users.urls")),
     path("api/catalog/", include(("catalog.urls", "catalog"), namespace="catalog")),
 
 ]
