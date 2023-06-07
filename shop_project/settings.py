@@ -34,7 +34,9 @@ EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-
+TELEGRAM_TOKEN = env("TELEGRAM_TOKEN")
+DJANGO_APP_HOST = env("DJANGO_APP_HOST")
+DJANGO_APP_PORT = env("DJANGO_APP_PORT")
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -44,7 +46,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [DJANGO_APP_HOST, "localhost", "127.0.0.1"]
 
 # Application definition
 

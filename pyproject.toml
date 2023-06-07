@@ -24,6 +24,7 @@ django-celery-beat = "^2.5.0"
 django-rest-swagger = "2.2.0"
 drf-yasg = "1.21.4"
 drf-yasg2 = "1.19.1"
+aiogram = "^2.25.1"
 
 
 [build-system]

@@ -31,7 +31,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - '8001:8000'
+      - '127.0.0.1:8001:${DJANGO_APP_PORT}'
     deploy:
       resources:
         limits:
@@ -74,5 +74,16 @@ services:
     depends_on:
       - redis
       - celery_worker
+      - postgres_db
+      - web
+
+  tg_bot:
+    build: .
+    container_name: shop_tg_bot
+    command: >
+      bash -c "./manage.py bot"
+    volumes:
+      - .:/app
+    depends_on:
       - postgres_db
       - web
