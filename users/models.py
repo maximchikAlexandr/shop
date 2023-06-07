@@ -35,7 +35,7 @@ class CustomUser(AbstractBaseUser):
     discounts_newsletter = models.BooleanField(
         default=False, verbose_name="Allow receiving a weekly newsletter with discounts"
     )
-
+    tg_chat_id = models.IntegerField(blank=True, null=True, default=None)
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 

@@ -35,12 +35,14 @@ and fill it with the following environment variables:
 DEBUG=True
 SECRET_KEY="the_key_used_for_encryption"
 DJANGO_SETTINGS_MODULE=shop_project.settings
+DJANGO_APP_HOST=web
+DJANGO_APP_PORT=8000
 
 # Database parameters
 POSTGRES_DB="database_name"
 POSTGRES_USER="your_database_username"
 POSTGRES_PASSWORD="your_database_password"
-POSTGRES_HOST="your_database_host"
+POSTGRES_HOST=postgres_db
 POSTGRES_PORT="port_of_your_database_in_container"
 DB_OUT_PORT="outer_port_of_your_database"
 
@@ -55,6 +57,9 @@ EMAIL_USE_SSL=False
 # Celery parameters
 CELERY_PORT="celery_port"
 CELERY_HOST="celery_host"
+
+# Telegram Bot parameters
+TELEGRAM_TOKEN="your_token_to_access_the_HTTP_API"
 ```
 
 Create and start the docker containers:
@@ -65,22 +70,30 @@ docker compose up -d
 
 If the application is deployed on the local machine, open the browser and navigate to the 
 project's admin page at: 
-```sh
+
 http://localhost:8001/admin/
-```
+
 
 ## Gmail SMTP server
 To use the application, access to a Simple Mail Transfer Protocol (SMTP) server is required. 
 To set up Gmail SMTP, obtain the password for your application. 
 Instructions on how to do this are provided in the documentation: 
-```sh
+
 https://support.google.com/accounts/answer/185833
-```
+
+## Token for Telegram Bot API
+Obtaining a token is as simple as contacting [@BotFather](https://t.me/botfather)
+, issuing the **/newbot** 
+command and following the steps until you're given a new token.
+
+
+You can find a step-by-step guide:
+https://core.telegram.org/bots/features#creating-a-new-bot
+
 
 ## API Documentation
 Swagger is utilized for API documentation. If the application is deployed on the local machine, 
 the documentation can be accessed through the following link:
 
-```sh
+
 http://localhost:8001/doc/
-```

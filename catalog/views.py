@@ -7,8 +7,10 @@ from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 from catalog.models import Basket, Category, Discount, Producer, Product, Promocode
+from catalog.authentication import TelegramAuthentication
 from catalog.serializers import (
     AddProductSerializer,
     BasketSerializer,
@@ -117,7 +119,8 @@ class ProductsListView(ListAPIView):
 
 
 class BasketView(APIView):
-    permission_classes = (IsAuthenticated,)
+    authentication_classes = (TelegramAuthentication, JWTAuthentication)
+    permission_classes = (IsAuthenticated, )
 
     @swagger_auto_schema(responses={200: BasketSerializer}, tags=["basket"])
     def get(self, request):
@@ -191,7 +194,5 @@ class OrderView(APIView):
             data=request.data, context={"request": request}
         )
         input_serializer.is_valid(raise_exception=True)
-
-        order = input_serializer.save()
-
+        input_serializer.save()
         return Response(input_serializer.data)
