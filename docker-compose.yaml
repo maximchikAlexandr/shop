@@ -45,7 +45,7 @@ services:
         condition: service_healthy
 
   redis:
-    image: redis
+    image: redis:alpine
     container_name: shop_broker
     volumes:
       - /redis_dump/:/var/lib/redis/
@@ -54,6 +54,7 @@ services:
       - '63792:6379'
 
   celery_worker:
+    restart: always
     build: .
     container_name: shop_celery_worker
     command: >
@@ -62,6 +63,7 @@ services:
       - .:/app
     depends_on:
       - redis
+      - postgres_db
       - web
 
   celery_beat:
