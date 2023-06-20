@@ -22,7 +22,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Set up  .env
         run: |
-          echo "${{ secrets.ENV_FILE }} > .env
+          echo "${{ secrets.ENV_FILE }} > ./.env
           
 
       - name: Install Dependencies
