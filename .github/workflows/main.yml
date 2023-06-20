@@ -26,7 +26,7 @@ jobs:
           
       - name: Run DB
         run: |
-          docker-compose -f docker-compose.yaml up -d postgres_db
+          docker-compose up -d postgres_db
           
       
 
