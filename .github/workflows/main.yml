@@ -3,7 +3,7 @@ name: Django CI
 on:
   push:
     branches: [feature/add_ci_pipeline]
-  pull_requests:
+  pull_request:
     branches: [feature/add_ci_pipeline]
 
 jobs:
